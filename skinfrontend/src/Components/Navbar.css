@@ -1,0 +1,54 @@
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(58,123,213,1) 0%, rgba(0,210,255,1) 100%);
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust body content margin-top to match the height of the navbar */
+.body-content {
+  margin-top: 70px;
+}
+
+/* Navbar brand styles */
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white !important;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Navbar link styles */
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: white !important;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+}
+
+/* Navbar toggle button */
+.navbar-toggler-icon {
+  color: white;
+}
+
+/* Additional styling for the authenticated user dropdown */
+.navbar-nav .nav-item .nav-link.dropdown-toggle::after {
+  border-top: 0.3em solid white;
+}
